@@ -5,6 +5,8 @@ $(document).ready( function(){
 	printNews();
 	//La variable "recipesArray" esta declarada en el archivo "data/recipes.js"
 	renderHighlightedRecipes(recipesArray);
+	// etapa 5
+	renderActivities(activitiesArray);
 });
 /*
 * Función etapa 2 para hacer elemento en News
@@ -77,6 +79,11 @@ function renderRecipe(recipe) {
 */
 function renderActivities(activitiesArray) {
 	console.log('Activities: ', activitiesArray);
+		activitiesArray.forEach(function(x) {
+		if (x !== 0) {
+			$(".wrapper-message").hide();
+			}
+		});
 }
 /*
 * Función que se encarga de pintar una actividad
