@@ -1604,6 +1604,11 @@ nav .nav-group.right {
   font-weight: 900;
   color: #d83e14;
 }
+/*etapa 2*/
+.page.home .callout-news .title-callout p {
+  color: #666;
+  font-weight: bold;
+}
 .page.home .btn-primary {
   display: block;
 }
