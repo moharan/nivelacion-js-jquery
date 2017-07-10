@@ -39,6 +39,38 @@ function renderHighlightedRecipes(recipesArray) {
 */
 function renderRecipe(recipe) {
 	console.log('Voy a pintar la receta: ', recipe);
+	//etapa 4
+	/*Box padre*/
+	var padre = $(".list-recipes");
+	padre.append("<a class='item-recipe' href='#'><span class='attribution'><span class='title-recipe'>" + recipe.title + "</span><span class='metadata-recipe'><span class='author-recipe'>" + recipe.source.name + "</span><span class='bookmarks-recipe'><span class='icon-bookmark'></span> </span></span></span><img src='img/recipes/640x800/" + recipe.name + ".jpg'/></a>");
+	/*padre.append("<a class='item-recipe'></a");
+	padre.attr("class","");
+	padre.attr("href","#");*/
+	/*var lista = $(".item-recipe");
+	lista.append("<span></span");
+	lista.attr("class","attribution");
+	lista.append("<img/>");
+	lista.attr("scr","URL DE LA IMAGEN");
+	var elemento = $(".attribution");
+	//elemento 1
+	elemento.append("<span></span");
+	elemento.attr("class","title-recipe");
+	//elemento 2
+	elemento.append("<span></span");
+	elemento.attr("class","metadata-recipe");
+	var datos = $("metadata-recipe");
+	datos.append("<span></span");
+	datos.attr("class","author-recipe");
+	// escribir NOMBRE DEL AUTO DE LA RECETA (ATRIBUTO
+	datos.append("<span></span");
+	datos.attr("class","bookmarks-recipe");
+	var icon = $("bookmarks-recipe");
+	icon.append("<span></span");
+	icon.attr("class","icon-bookmark");*/
+	/*
+	padre2.attr("class","parrafo-extra");
+	padre2.addClass("parrafo-box");*/
+
 }
 /*
 * Función que se encarga de pintar todas las actividades
