@@ -1,25 +1,35 @@
 $(document).ready( function(){
 	// etapa 1
 	$(".js-back").hide();
+		//Estoy llamando a la funcion de etapa 2
+	printNews();
 	//La variable "recipesArray" esta declarada en el archivo "data/recipes.js"
 	renderHighlightedRecipes(recipesArray);
-	//Estoy llamando a la funcion de etapa 2
-	printNews();
 });
 /*
-* Función que se encarga de pintar TODAS las recetas que tengan 
-* marcado el atributo "highlighted" como TRUE
+* Función etapa 2 para hacer elemento en News
 */
 function printNews () {
 	$(".title-callout").append("<p>NUEVAS RECETAS</p>");
-	console.log('News:');
+	//console.log('News:');
 }
 /*
 * Función que se encarga de pintar TODAS las recetas que tengan 
 * marcado el atributo "highlighted" como TRUE
 */
 function renderHighlightedRecipes(recipesArray) {
-	console.log('Recipes: ', recipesArray);
+	//console.log(recipesArray);
+	//console.log(recipesArray.highlighted == true);
+	/*$(recipesArray).each(function(x) {
+		if (x.highlighted == true) {
+			renderRecipe(x);
+		}
+	});*/
+	recipesArray.forEach(function(x) {
+		if (x.highlighted == true) {
+			renderRecipe(x);
+			}
+		});
 }
 /*
 * Función que se encarga de pintar UNA recetas que tenga 
