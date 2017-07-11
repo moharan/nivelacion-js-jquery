@@ -1,6 +1,10 @@
 $(document).ready( function(){
 	// etapa 1
 	$(".js-back").hide();
+	// para poder navegarlo en ghpages
+	$(".js-menu").click(function(){
+		window.location.href = "recipe.html";
+	});
 		//Estoy llamando a la funcion de etapa 2
 	printNews();
 	//La variable "recipesArray" esta declarada en el archivo "data/recipes.js"
