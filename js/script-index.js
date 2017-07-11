@@ -79,11 +79,14 @@ function renderRecipe(recipe) {
 */
 function renderActivities(activitiesArray) {
 	console.log('Activities: ', activitiesArray);
-		activitiesArray.forEach(function(x) {
+	activitiesArray.forEach(function(x) {
 		if (x !== 0) {
 			$(".wrapper-message").hide();
-			}
-		});
+			// etapa 6
+			var activities = $(".list-activities");
+			activities.append("<a href='#' class='item-activity'><span class='attribution'><span class='avatar'><img src='" + x.userAvatar + "' class='imagen-avatar'></span><span class='meta'><span class='author'>" +x.userName + "</span> made <span class='recipe'>" + x.recipeName + "</span>:" + x.text + "<span class='location'>&mdash;" + x.place + "</span></span></span><div class='bg-image' style='background-image: url(" + x.image + ");'></div></a>");
+		}
+	});
 }
 /*
 * Función que se encarga de pintar una actividad
