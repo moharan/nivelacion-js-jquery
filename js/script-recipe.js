@@ -23,5 +23,8 @@ $(document).ready( function(){
 		$(".js-show-recipe").removeClass("active");
 		$(".js-show-recipe").removeClass("activo");
 	});
-
+	// etapa 10
+	$(".js-back").click(function(){
+		window.location.href = "index.html";
+	});
 });
